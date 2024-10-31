@@ -10,9 +10,27 @@
 		$_SESSION["idade2"] = $_POST["idade2"];
 		$_SESSION["peso2"] = $_POST["peso2"];
 		$_SESSION["altura2"] = $_POST["altura2"];
+
+		if ($_SESSION["idade"] > $_SESSION["idade2"]) {
+			echo "O mais velho é " . $_SESSION["name"] . "<br><br>";
+		} else {
+			echo "O mais velho é " . $_SESSION["name2"] . "<br><br>";
+		}
+
+		if ($_SESSION["altura"] > $_SESSION["altura2"]) {
+			echo "O mais alto é " . $_SESSION["name"] . "<br><br>" ;
+		} else {
+			echo "O mais alto é " . $_SESSION["name2"] . "<br><br>";
+		}
+
+		if ($_SESSION["peso"] > $_SESSION["peso2"]) {
+			echo "O mais pesado é " . $_SESSION["name"] . "<br><br>";
+		} else {
+			echo "O mais pesado é " . $_SESSION["name2"] . "<br><br>" ;
+		}
 	?>
 </head>
 <body>
-	<h1>blabalbla</h1>
+	<h1></h1>
 </body>
 </html>
