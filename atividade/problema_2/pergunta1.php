@@ -6,13 +6,16 @@
 	<title>Pergunta N°1</title>
 </head>
 <body>
-	
-		<form action=".php" method="post">
+		<form action="pergunta2.php" method="post">
 		
-			<p>a = tãnãnã</p>
-			<p>b = puapuapua</p>
-			<p>c = piui</p>
-			<p>d = tãnãnã</p>
+			<p>Que cor é o céu?</p>
+			<span>1- Preto</span>
+			<span>2- Azul</span>
+			<span>3- Vermelho</span>
+			<span>4- Rosa</span>
+			<br>
+			<input type="number" name="resposta" id="resposta">
+			<input type="submit" name="Enviar" value="Enviar">
 
 		</form>
 </body>
