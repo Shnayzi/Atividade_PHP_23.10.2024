@@ -8,6 +8,7 @@
 <body>
 	<?php 
 		session_start();
+		$_SESSION["nome"] = $_POST["nome"];
 		$_SESSION["pontuacao"] = 0;
 		$_SESSION["resposta"] = $_POST["resposta"];
 		if ($_SESSION['resposta'] == 2) {
@@ -20,11 +21,11 @@
 
 	 <form action="pergunta3.php" method="post">
 		
-			<p>Qual o sentido da vida?</p>
-			<span>1- Ser feliz</span>
-			<span>2- Pegar mulher</span>
-			<span>3- Alcançar seus objetivos</span>
-			<span>4- Sei lá</span>
+			<p>Qual é o melhor jogador?</p>
+			<span>1- Gabigol</span>
+			<span>2- Calleri</span>
+			<span>3- Raphael Veiga</span>
+			<span>4- Yuri Alberto</span>
 			<br>
 			<input type="number" name="resposta" id="resposta">
 			<input type="submit" name="Enviar" value="Enviar">

@@ -9,11 +9,9 @@
 	<?php 
 		session_start();
 		$_SESSION["resposta"] = $_POST["resposta"];
-		if ($_SESSION['resposta'] == 2) {
+		if ($_SESSION['resposta'] == 3) {
 			$_SESSION["pontuacao"]++;
 		}
-
-		echo $_SESSION["pontuacao"];
 	 ?>
 </body>
 </html>
